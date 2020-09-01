@@ -1,0 +1,24 @@
+.header {
+  &__container {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu-group, &__util {
+    display: flex;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li {
+      padding: 1rem;
+    }
+  }
+}
+
+.search-trigger {
+  padding: 1rem;
+}
