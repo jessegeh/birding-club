@@ -1,0 +1,11 @@
+.hidden-on-mobile {
+  @include pocket {
+    display: none;
+  }
+}
+
+.hidden-on-desk {
+  @include lap-and-up {
+    display: none;
+  }
+}

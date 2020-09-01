@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\jesse\Local Sites\fictional-birding-club\app\public\wp-content\themes\fictional-birding-theme\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! C:\Users\jesse\Local Sites\fictional-birding-club\app\public\wp-content\themes\fictional-birding-theme\src\app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/jeremygehlen/Local Sites/fictional-birding-club/app/public/wp-content/themes/fictional-birding-club/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Users/jeremygehlen/Local Sites/fictional-birding-club/app/public/wp-content/themes/fictional-birding-club/src/app.scss */"./src/app.scss");
 
 
 /***/ })

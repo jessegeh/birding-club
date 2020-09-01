@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,9 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix
-.js('src/app.js', 'dist/')
-.sass('src/app.scss', 'dist/');
+mix.js("src/app.js", "dist/").sass("src/app.scss", "dist/");
 
 // Full API
 // mix.js(src, output);
@@ -34,7 +32,7 @@ mix
 // mix.minify(file);
 // mix.sourceMaps(); // Enable sourcemaps
 // mix.version(); // Enable versioning.
-// mix.disableNotifications();
+mix.disableNotifications();
 // mix.setPublicPath('path/to/public');
 // mix.setResourceRoot('prefix/for/resource/locators');
 // mix.autoload({}); <-- Will be passed to Webpack's ProvidePlugin.
