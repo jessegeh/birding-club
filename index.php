@@ -1,75 +1,79 @@
 <?php get_header(); ?>
 
 <div class="page-banner">
-      <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/Grackle-by-Phil-Gehlen.jpeg') ?>);"></div>
-      <div class="page-banner__content container t-center c-white">
-        <h1 class="headline headline--large">Welcome!</h1>
-        <h2 class="headline headline--medium">We&rsquo;ll take your birding to a whole new level.</h2>
-        <h3 class="headline headline--small">Why don&rsquo;t you check out our latest <strong>events</strong>!</h3>
-        <a href="#" class="btn btn--large btn--blue">Read the latest news!</a>
+      <div class="page-banner__bg-image"style="background-image: url(<?php echo  get_theme_file_uri('/images/Grackle-by-Phil-Gehlen.jpeg') ?>);"></div>
+      <div class="page-banner__content">
+        <h1 class="page-banner__headline">Welcome!</h1>
+        <h2 class="page-banner__headline--small">We&rsquo;ll take your birding to a whole new level.</h2>
+        <h3 class="page-banner__headline--small">Why don&rsquo;t you check out our latest <strong>events</strong>!</h3>
+        <a href="#">Read the latest news!</a>
       </div>
     </div>
 
-    <div class="full-width-split group">
-      <div class="full-width-split__one">
-        <div class="full-width-split__inner">
-          <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
-
-          <div class="event-summary">
-            <a class="event-summary__date t-center" href="#">
-              <span class="event-summary__month">Mar</span>
-              <span class="event-summary__day">25</span>
+    <div class="main-content">
+      <div class="main-content__one">
+        <div class="main-content__inner">
+          <h2 class="main-content__inner--headline">Upcoming Events</h2>
+          <div class="event">
+            <a class="event__date" href="#">
+              <span class="event__month">Mar</span>
+              <span class="event__day">25</span>
             </a>
-            <div class="event-summary__content">
-              <h5 class="event-summary__title headline headline--tiny"><a href="#">Poetry in the 100</a></h5>
-              <p>Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="nu gray">Learn more</a></p>
+            <div class="event__content">
+              <h5 class="event__title"><a href="#">Poetry in the 100</a></h5>
+              <p class="event__desc">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. </p>
+              <a href="#" class="event__btn--gray">
+                <strong>
+                  Learn more
+                </strong>
+                </a>
             </div>
           </div>
-          <div class="event-summary">
-            <a class="event-summary__date t-center" href="#">
-              <span class="event-summary__month">Apr</span>
-              <span class="event-summary__day">02</span>
+          <div class="event">
+            <a class="event__date t-center" href="#">
+              <span class="event__month">Apr</span>
+              <span class="event__day">02</span>
             </a>
-            <div class="event-summary__content">
-              <h5 class="event-summary__title headline headline--tiny"><a href="#">Quad Picnic Party</a></h5>
-              <p>Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="nu gray">Learn more</a></p>
+            <div class="event__content">
+              <h5 class="event__title headline"><a href="#">Quad Picnic Party</a></h5>
+              <p>Live music, a taco truck and more can found in our third annual quad picnic day.</p>
+              <a href="#" class="nu gray">Learn more</a>
             </div>
           </div>
-
-          <p class="t-center no-margin"><a href="#" class="btn btn--blue">View All Events</a></p>
+          <a href="#" class="event__btn">View All Events</a>
         </div>
       </div>
-      <div class="full-width-split__two">
-        <div class="full-width-split__inner">
+      <div class="main-content__two">
+        <div class="main-content__inner">
           <h2 class="headline headline--small-plus t-center">From Our Blogs</h2>
 
-          <div class="event-summary">
-            <a class="event-summary__date event-summary__date--beige t-center" href="#">
-              <span class="event-summary__month">Jan</span>
-              <span class="event-summary__day">20</span>
+          <div class="event">
+            <a class="event__date event__date--beige t-center" href="#">
+              <span class="event__month">Jan</span>
+              <span class="event__day">20</span>
             </a>
-            <div class="event-summary__content">
-              <h5 class="event-summary__title headline headline--tiny"><a href="#">We Were Voted Best School</a></h5>
+            <div class="event__content">
+              <h5 class="event__title headline"><a href="#">We Were Voted Best School</a></h5>
               <p>For the 100th year in a row we are voted #1. <a href="#" class="nu gray">Read more</a></p>
             </div>
           </div>
-          <div class="event-summary">
-            <a class="event-summary__date event-summary__date--beige t-center" href="#">
-              <span class="event-summary__month">Feb</span>
-              <span class="event-summary__day">04</span>
+          <div class="event">
+            <a class="event__date event__date--beige t-center" href="#">
+              <span class="event__month">Feb</span>
+              <span class="event__day">04</span>
             </a>
-            <div class="event-summary__content">
-              <h5 class="event-summary__title headline headline--tiny"><a href="#">Professors in the National Spotlight</a></h5>
+            <div class="event__content">
+              <h5 class="event__title headline"><a href="#">Professors in the National Spotlight</a></h5>
               <p>Two of our professors have been in national news lately. <a href="#" class="nu gray">Read more</a></p>
             </div>
           </div>
 
-          <p class="t-center no-margin"><a href="#" class="btn btn--yellow">View All Blog Posts</a></p>
+          <p class="t-center no-margin"><a href="#" class="event__btn btn--yellow">View All Blog Posts</a></p>
         </div>
       </div>
     </div>
 
-    <div class="hero-slider">
+    <!-- <div class="hero-slider">
       <div data-glide-el="track" class="glide__track">
         <div class="glide__slides">
           <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/Bald-Eagle-by-Phil-Gehlen.png') ?>);">
@@ -93,7 +97,7 @@
         </div>
         <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
       </div>
-    </div>
+    </div> -->
 
     <?php get_footer();
 
