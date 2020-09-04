@@ -16,12 +16,12 @@
           <h2 class="main-content__inner--headline">Upcoming Events</h2>
           <div class="event">
             <a class="event__date" href="#">
-              <span class="event__month">Mar</span>
-              <span class="event__day">25</span>
+              <span class="event__month">January</span>
+              <span class="event__day">1</span>
             </a>
             <div class="event__content">
-              <h5 class="event__title"><a href="#">Poetry in the 100</a></h5>
-              <p class="event__desc">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. </p>
+              <h5 class="event__title"><a href="#">Best day of the year for birders!</a></h5>
+              <p class="event__desc">Try and find as many birds as you can! All birds count!</p>
               <a href="#" class="event__btn--gray">
                 <strong>
                   Learn more
@@ -35,8 +35,8 @@
               <span class="event__day">02</span>
             </a>
             <div class="event__content">
-              <h5 class="event__title headline"><a href="#">Quad Picnic Party</a></h5>
-              <p>Live music, a taco truck and more can found in our third annual quad picnic day.</p>
+              <h5 class="event__title headline"><a href="#">Member Picnic Party</a></h5>
+              <p>Live music, a taco truck and more can found in our third annual member picnic day.</p>
               <a href="#" class="nu gray">Learn more</a>
             </div>
           </div>
@@ -53,8 +53,8 @@
               <span class="event__day">20</span>
             </a>
             <div class="event__content">
-              <h5 class="event__title headline"><a href="#">We Were Voted Best School</a></h5>
-              <p>For the 100th year in a row we are voted #1. <a href="#" class="nu gray">Read more</a></p>
+              <h5 class="event__title headline"><a href="#">We Were Voted Best Birding Club</a></h5>
+              <p>For the 2nd year in a row we are voted #1. <a href="#" class="nu gray">Read more</a></p>
             </div>
           </div>
           <div class="event">
@@ -63,8 +63,8 @@
               <span class="event__day">04</span>
             </a>
             <div class="event__content">
-              <h5 class="event__title headline"><a href="#">Professors in the National Spotlight</a></h5>
-              <p>Two of our professors have been in national news lately. <a href="#" class="nu gray">Read more</a></p>
+              <h5 class="event__title headline"><a href="#">Birders in the National Spotlight</a></h5>
+              <p>Two of our birders have been in national news lately. <a href="#" class="nu gray">Read more</a></p>
             </div>
           </div>
 
