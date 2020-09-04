@@ -36,25 +36,47 @@
 }
 
 .main-content {
-  width: 100%;
+  max-width: 1140px;
   height: 100%;
   display: flex;
-  padding: 6rem 3rem;
-  align-items: center;
+  margin: 0 auto;
+
+  @include portable {
+    flex-direction: column;
+  }
 
   &__one {
-    flex: 2;
+    flex: 3;
+    height: 100%;
     flex-direction: column;
   }
 
   &__two {
     flex: 1;
-    flex-direction: column;
-  }
+    height: 100%;
 
+    flex-direction: column;
+    border-left: 1px solid $light-gray;
+
+    @include portable {
+      border-left: none;
+      padding: 0;
+    }
+  }
   &__inner {
+    margin: 4rem 0;
+    height: 100%;
     &--headline {
-      padding-bottom: 2rem;
+      padding: 1rem;
+
+      @include portable {
+        padding: 0.5rem;
+        text-align: center;
+      }
+    }
+
+    &--btn-wrapper {
+      margin: 1rem;
     }
   }
 }
@@ -62,10 +84,8 @@
 .event {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
-  padding-bottom: 2rem;
-  width: 80%;
-  border-bottom: 1px solid #eee;
+  margin: 1rem 0;
+  padding: 1rem;
 
   &__date {
     font-weight: bold;
@@ -82,7 +102,7 @@
   &__btn {
     font-size: 16px;
     border: 1px solid $gray;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 100px;
 
     &--gray {
@@ -92,8 +112,102 @@
   }
 
   &__title {
+    margin: 1rem 0;
     & a {
       font-weight: 600;
     }
   }
+}
+
+.carousel-wrapper {
+  height: 570px;
+  width: 1140px;
+  position: relative;
+  margin: 10rem auto;
+  color: $white;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &__content {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--text {
+      padding: 2rem;
+      background-color: rgba(255,255,255, 0.2);
+    }
+  }
+}
+
+.arrow {
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.arrow-prev {
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .arrow,
+  .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+
+/*Select every element*/
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background-size: cover;
+}
+.item-2 {
+  background-size: cover;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2 {
+  z-index: 3;
+  opacity: 1;
 }
