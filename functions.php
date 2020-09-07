@@ -14,3 +14,9 @@ function birding_club_files() {
 }
 
 add_action('wp_enqueue_scripts', 'birding_club_files');
+
+function birding_club_features() {
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'birding_club_features');
