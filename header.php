@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
     <head>
+        <meta charset="<?php bloginfo('charset'); ?>">
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
     <header class="header">
       <div class="header__container">
         <h1 class="header__logo">
@@ -14,7 +15,7 @@
         <div class="header__menu-group">
           <nav class="main-navigation">
             <ul>
-              <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
+              <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 11) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
               <li><a href="#">Learn</a></li>
               <li><a href="#">Events</a></li>
               <li><a href="#">Blog</a></li>
