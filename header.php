@@ -10,8 +10,11 @@
         <h1 class="header__logo">
           <a href="<?php echo site_url() ?>"><strong>Fictional</strong> Birding Club</a>
         </h1>
-        <span class="js-search-trigger header__search-trigger hidden-on-desk "><i class="fa fa-search" aria-hidden="true"></i></span>
-        <i class="header__menu-trigger fa fa-bars hidden-on-desk " aria-hidden="true"></i>
+        <div class="mobile-nav hidden-on-desk">
+          <span class="js-search-trigger header__search-trigger "><i class="fa fa-search" aria-hidden="true"></i></span>
+          <span class="js-search-trigger header__search-trigger "><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+          
         <div class="header__menu-group">
           <nav class="main-navigation">
             <ul>
@@ -21,12 +24,17 @@
               <li><a href="#">Blog</a></li>
             </ul>
           </nav>
-          <div class="header__util">
-          <ul>
-            <li><a href="#" class="btn btn--small btn--orange">Login</a></li>
-            <li><a href="#" class="btn btn--small btn--dark-orange">Sign Up</a></li>
-            <li><a href="#"><span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span></a></li>
-          </ul>
+          <div class="dropdown-menu">
+            <div class="dropdown">
+              <p><a href="#" class="dropbtn">My Profile</a></p>
+              <div class="dropdown-content">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="searchbox">
+            <input  style="font-family: FontAwesome;" placeholder='&#xf002' />
           </div>
         </div>
       </div>
